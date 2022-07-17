@@ -1,0 +1,323 @@
+:root{
+    --red-color : red;
+    --blue-color: rgb(12, 12, 54);
+    --margin-top: 1rem;
+    --orange-color: orangered;
+    --opaque-orange: rgba(255, 166, 0, 0.253);
+    --big-margin-top: 1.3rem;
+    --font-weight: bold;
+    --black-color: black;
+    --opaque-black: rgba(0, 0, 0, 0.836);
+    --zero-padding: 0px;
+    --zero-margin:0px;
+    --auto-margin: 0px auto;
+    --border-width: 2px;
+    --border-type: solid;
+    --text-center: center;
+    --white-color: white;
+    --opacity: .75;
+    --padding: 1rem;
+    --margin-bottom: 1rem;
+    --margin: 1rem;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: var(--white-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+}
+
+
+/* ......................................... */
+
+main{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+}
+
+.first-main-class{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center_text{
+    text-align: var(--text-center);
+}
+
+.red_highlight{
+    color: var(--red-color);
+}
+
+.image95{
+    width: 95%;
+    margin-top: var(--margin-top);
+    border:var(--border-width) var(--border-type) rgba(165, 42, 42, 0.301);
+}
+
+.orange-bordered-link{
+    text-decoration: none;
+    background-color: var(--orange-color);
+    padding: var(--padding);
+    text-align: center;
+    width: 90%;
+    margin-top: var(--margin-top);
+    border: 1px var(--border-type) var(--orange-color);
+    outline: 1px solid orangered;
+    outline-offset: 0.2rem;
+}
+
+.light-smaller-p{
+    font-size: 0.7rem;
+    word-spacing: 0.2rem;
+    letter-spacing: 0.09rem;
+    font-style: italic;
+}
+
+.bold-text{
+    font-weight: 700;
+}
+
+.blue-text{
+    color: var(--blue-color);
+}
+
+.blue-span{
+    color: var(--blue-color);
+    font-weight: 700;
+}
+
+.red-text{
+    color: var(--red-color);
+}
+
+.red-span{
+    color: var(--red-color);
+    font-weight: 700;
+}
+
+.black-text{
+    color: black;
+}
+
+.black-span{
+    color: black;
+    font-weight: 700;
+}
+
+.image100{
+    width: 100%;
+}
+
+.about-you{
+    font-weight: 700;
+    color: black;
+}
+
+
+.image80{
+    width: 80%;
+}
+
+.marginTop-paragraphs{
+    margin-top: var(--margin-top);
+}
+
+.greater_than{
+    color: black;
+    border: 1px solid rgba(12, 12, 54, 0.452) ;
+    border-radius: 50%;
+    padding: 0 5px 0 5px;
+    margin-right: 1rem;
+}
+
+.red-greater-than{
+    color: red;
+    border: 1px solid rgba(240, 6, 6, 0.582) ;
+    border-radius: 50%;
+    padding: 0 5px 0 5px;
+    margin-right: 1rem;
+}
+
+.numbered-inclusion{
+    display: flex;
+    margin: var(--margin);
+    align-items: flex-start;
+}
+
+.all-you{
+    display: flex;
+    align-items: flex-start;
+    margin: 1rem;
+    align-self: center;
+    
+}
+
+.questions{
+    width: 95%;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+/* ......................................... */
+
+
+
+/* styling the first main  */
+main:first-of-type{
+    background-color: var(--blue-color);
+}
+main:first-of-type h2:first-of-type{
+    margin-top: var(--big-margin-top);
+    font-weight: lighter;
+}
+main:first-of-type p:first-of-type{
+    opacity: var(--opacity);
+}
+
+
+/* styling the second main  */
+main:nth-of-type(2) h3:first-of-type{
+    text-align: var(--text-center);
+    padding: var(--padding);
+}
+
+main:nth-of-type(2) > p:first-of-type,main:nth-of-type(2) > p:nth-of-type(2), main:nth-of-type(2) h3:nth-of-type(2){
+    padding: 0 1.3rem 1.3rem 1.3rem;
+}
+
+main:nth-of-type(2) > p:nth-of-type(3){
+    border: 2px solid var(--orange-color) ;
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: rgba(255, 166, 0, 0.219);
+}
+
+main:nth-of-type(2) > p:nth-of-type(3) span{
+    font-weight: 700;
+}
+
+main:nth-of-type(2) h3:nth-of-type(2){
+    font-size: 1rem;
+}
+
+
+
+/* styling the third main  */
+
+#not-part h3:first-of-type, #not-part p:nth-of-type(2){
+    text-align: center;
+    margin-top: var(--big-margin-top);
+}
+
+#not-part > p:first-of-type{
+    margin: 0 1rem;
+}
+
+#not-part p:nth-of-type(2){
+    font-size: 1.2rem;
+}
+
+#not-part p:nth-of-type(3){
+    margin: 1rem 0.7rem;
+    font-size: 0.9rem;
+}
+
+
+/* styling the fourth main  */
+main:nth-of-type(4){
+    background-color: var(--opaque-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main:nth-of-type(4) .image80{
+    margin-top: var(--margin-top);
+    border: 2px solid white;
+}
+
+main:nth-of-type(4) p:first-of-type{
+    font-size: 1.1rem;
+}
+
+main:nth-of-type(4) p:first-of-type span{
+    font-weight: 600;
+}
+
+main:nth-of-type(4) >p:nth-of-type(2), main:nth-of-type(4) >p:nth-of-type(2){
+    margin: 0px 1rem;
+}
+
+
+/* styling the fifth main  */
+main:nth-of-type(5) h3:first-of-type, main:nth-of-type(5) h3:nth-of-type(2), main:nth-of-type(5) h3:nth-of-type(3), main:nth-of-type(5) h3:nth-of-type(4){  
+    margin-top: var(--margin-top);
+    text-align: center;
+}
+
+main:nth-of-type(5) > p:first-of-type{
+    margin: var(--margin);
+}
+
+main:nth-of-type(5) .numbered-inclusion > p:first-of-type{
+    font-size: 1.3rem;
+    border-right: 1px solid skyblue;
+    padding-right: 1rem;
+    margin-right: 1rem;
+}
+
+main:nth-of-type(5) .numbered-inclusion img{
+    width: 2rem;
+    height: 2rem;
+    border-right: 1px solid var(--blue-color);
+    padding-right: 1rem;
+    margin-right: 1rem;
+    object-fit: cover;
+}
+
+#bonus1, #bonus2, #bonus3, #bonus4{
+    background-color: aliceblue;
+    padding: 0.5rem;
+}
+
+#bonus1 p:first-of-type, #bonus2 p:first-of-type, #bonus3 p:first-of-type, #bonus4 p:first-of-type{
+    margin-bottom: 0.4rem;
+}
+
+#bonus1 p:nth-of-type(2), #bonus2 p:nth-of-type(2), #bonus3 p:nth-of-type(2), #bonus4 p:nth-of-type(2){
+    font-size: 0.8rem;
+}
+
+.questions .black-text{
+    display: none;
+    margin-top: var(--big-margin-top);
+}
+
+/* .questions:hover{
+    background-color: var(--blue-color);
+} 
+
+.questions:hover .black-span{
+    color: white;
+} */
+
+/* .questions:active{
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+.questions:active .black-span{
+    color: black;
+}
+
+.questions:active .black-text{
+    display: block;
+}  */
+
+
+
