@@ -20,4 +20,6 @@ const answer5=document.getElementById("answer2")
 const answer6=document.getElementById("answer2")
 
 
-
+question1.addEventListener("click",()=>{
+    answer1.style.display="block";
+})
