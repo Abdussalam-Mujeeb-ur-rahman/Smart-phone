@@ -156,19 +156,12 @@ main{
     
 }
 
-.questions{
-    width: 95%;
-    margin: 1rem auto;
-    padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.479);
-}
-
 /* ......................................... */
 
 
 
 /* styling the first main  */
-main:first-of-type{
+.first-main{
     background-color: var(--blue-color);
 }
 main:first-of-type h2:first-of-type{
@@ -297,31 +290,30 @@ main:nth-of-type(5) .numbered-inclusion img{
 #bonus1 p:nth-of-type(2), #bonus2 p:nth-of-type(2), #bonus3 p:nth-of-type(2), #bonus4 p:nth-of-type(2){
     font-size: 0.8rem;
 }
-
-.questions .black-text{
-    display: none;
-    margin-top: var(--big-margin-top);
+.questions{
+    background-color: rgba(128, 128, 128, 0.568);
+    margin: 1rem;
 }
-
-/* .questions:hover{
+.question{
+    padding: 15px;
+    transition: all 1s;
+}
+.question:active{
     background-color: var(--blue-color);
-} 
-
-.questions:hover .black-span{
     color: white;
-} */
-
-/* .questions:active{
-    background-color: rgba(0, 0, 0, 0.479);
+}
+.question:hover{
+    background-color: var(--blue-color);
+    color: white;
+}
+summary.question.black-span::marker{
+    color: rgba(128, 128, 128, 0);
+}
+.answer{
+    padding: 0 30px 15px 30px;
 }
 
-.questions:active .black-span{
-    color: black;
-}
 
-.questions:active .black-text{
-    display: block;
-}  */
 
 
 /* styling the sixth main  */
@@ -338,6 +330,7 @@ main:nth-of-type(6)>div:first-of-type{
 main:nth-of-type(6)>div:first-of-type>a{
     color: var(--blue-color);
 }
+
 
 
 /* styling the footer  */
