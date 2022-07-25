@@ -335,7 +335,7 @@ main:nth-of-type(6)>div:first-of-type>a{
 
 /* styling the footer  */
 footer{
-    background-color: var(--opaque-black);
+    background-color: rgba(128, 128, 128, 0.449);
     padding: 1rem;
     display: flex;
     justify-content: center;
